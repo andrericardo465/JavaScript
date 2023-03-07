@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Teste 2</title>
+</head>
+<body>
+    <a href="https://library.playstation.com/downloads" target="_blank">
+        <div id="t1" onmouseenter="entrar1()"
+        onmousedown="clicar1()" onmouseup="soltar1()" onmouseleave="sair1()"> PlayStation Library </div>
+    </a>
+
+    <!-- 
+        <div id="t2" onmouseenter="entrar2()"
+    onmousedown="clicar2()" onmouseup="soltar2()" onmouseleave="sair2()"> Entre! </div>
+
+    <div id="t3" onmouseenter="entrar3()"
+    onmousedown="clicar3()" onmouseup="soltar3()" onmouseleave="sair3()"> Entre! </div>
+
+    <div id="t4" onmouseenter="entrar4()"
+    onmousedown="clicar4()" onmouseup="soltar4()" onmouseleave="sair4()"> Entre! </div>
+    -->
+
+
+    <script>
+
+        function entrar1() {
+            var e1 = document.getElementById('t1')
+            e1.innerHTML = 'Clique!'
+            e1.style.boxShadow = ''
+            e1.style.backgroundColor = 'white'
+        }
+        function clicar1() {
+            var c1 = document.getElementById('t1')
+            c1.style.boxShadow = 'inset 0px 0px 20px 3px black'
+            c1.innerHTML = 'Solte!'
+            c1.style.backgroundColor = 'white'
+        }
+        function soltar1() {
+            var s1 = document.getElementById('t1')
+            s1.innerHTML = 'Clique!'
+            s1.style.boxShadow = 'none'
+            s1.style.backgroundColor = 'white'
+        }
+        function sair1() {
+            var S1 = document.getElementById('t1')
+            S1.innerHTML = 'PlayStation Library'
+            S1.style.backgroundColor = 'white'
+        }
+
+    </script>
+</body>
+</html>

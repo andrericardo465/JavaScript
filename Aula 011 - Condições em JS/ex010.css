@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+body > a {
+    background-color: grey;
+
+}

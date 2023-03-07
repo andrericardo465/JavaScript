@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+body {
+    background-color: #444444;
+
+}
+
+div#quadrado {
+    background: #444444;
+    color: white;
+    font-size: 18px;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    text-align: center;
+}

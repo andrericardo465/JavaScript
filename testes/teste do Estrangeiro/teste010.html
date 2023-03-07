@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste010.css">
+    <title>Passaporte</title>
+</head>
+<body>
+    <h1 class="h1">Apenas Brasileiros</h1>
+    <h2>Only Brazilians</h2>
+    <input id="br" type="button" value="Brasileiro" onclick="identificação()">   &nbsp; &nbsp; &nbsp;  <input id="estr" type="button" value="Estrangeiro" onclick="identificação2()"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="button" value="Limpar / Refresh" onClick="window.location.reload()"> 
+    <br>
+    <div id="res1"> </div>
+    <div id="res2"></div>
+
+    
+    <script>
+
+        function identificação() {
+            var br1 = document.getElementById('br')
+            var estr2 = document.getElementById('estr')
+            var res =  document.getElementById('res1')
+            if ( br1 )  {
+                res1.innerHTML = 'Ok! Identificamos que você é Brasileiro, como podemos lhe ajudar?' 
+            }
+        }
+        function identificação2() {
+            var estr2 = document.getElementById('estr')
+            var res = document.getElementById('res2')
+            if ( estr2 )    {
+                res.innerHTML = 'Dear friend, we have identified that you are not Brazilian. Road only for Brazilians.'
+
+            }
+        }
+
+    </script>
+</body>
+</html>

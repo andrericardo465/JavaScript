@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="iconetesteJS.ico" type="image/x-icon">
+    <title>Primeiros passos com o DOM</title>
+    
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <p id="res">Aqui vai o resultado:</p>
+    <div>Clique em mim</div>
+
+    <script>
+        var p0 = document.getElementsByTagName('p')[0]
+        document.write('Está escrito assim: ' + p0.innerHTML) 
+        p0.style.color = '#0073a0'
+
+        var id = document.getElementById('res')
+        document.write(`<br/> <br/> ${id.innerHTML}`)
+    </script>
+
+
+    
+
+</body>
+</html>

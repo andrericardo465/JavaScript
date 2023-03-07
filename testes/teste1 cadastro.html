@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 1</title>
+</head>
+<body> 
+    
+
+    <script>
+        var i1 = window.prompt('Qual item deseja cadastrar?')
+        var i1v = Number(window.prompt('Qual seu valor?'))
+        document.write(`O item <strong>${i1}</strong> custa: <strong>${i1v} reais</strong> <br/>`)
+        window.confirm('Deseja continuar?')
+
+        var i2 = window.prompt('Qual item deseja cadastrar?')
+        var i2v = Number(windows.prompt('Qual seu valor?'))
+        document.write(`O item <strong>${i2}</strong> custa: <strong>${i2v} reais</strong> <br/>`)
+
+        var i3 = window.prompt('Qual item deseja cadastrar?')
+        var i3v = Number(window.prompt('Qual seu valor?'))
+        document.write(`O item <strong>${i3}</strong> custa: <strong>${i3v} reais</strong> <br/>`)
+
+
+        var total = i1v + i2v + i3v
+        document.write(`<br/> <br/> Total: <strong>${total} reais</strong> `)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style006.css">
+    <title>Eventos DOM</title>
+</head>
+<body>
+    <div id='quadrado' onmouseenter = 'entrar()' onmouseleave="sair()">
+        Entre!
+    </div>
+
+    <script> 
+        function entrar() {
+            var e = document.getElementById('quadrado')
+            e.style.backgroundColor = '#444444'
+            e.style.boxShadow = 'black 0px 0px 20px 0px inset'
+            e.style.color = 'red'
+            e.innerHTML = 'Saia!'
+         }
+        function sair() {
+            var s = document.getElementById('quadrado')
+            s.style.backgroundColor = '#444444'
+            s.style.boxShadow = 'none'
+            s.style.color = 'white'
+            s.innerHTML = 'Entre!'
+
+
+        }
+    </script>
+
+</body>
+</html>
